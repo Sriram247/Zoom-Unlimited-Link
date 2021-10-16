@@ -5,11 +5,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC, wait
 import time
 import pyautogui
-#from pyvirtualdisplay import Display
 
 
-FirstName ="Fogo's"
-LastName  ="Cool Kid"
+
+FirstName "Cool"
+LastName  ="Kid"
 
 password  ="PROgrammer1"
 #Wont work without min. 8 characters, 1 letter , 1 number ,Both upper and lower case
