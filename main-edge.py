@@ -8,14 +8,14 @@ import pyautogui
 
 
 
-FirstName = "Cool"
+FirstName ="Cool"
 LastName  ="Kid"
 
 password  ="PROgrammer1"
 #Wont work without min. 8 characters, 1 letter , 1 number ,Both upper and lower case
 
-PATH = "chromedriver.exe"
-driver = webdriver.Chrome(PATH)
+PATH = "msedgedriver.exe"
+driver = webdriver.Edge(PATH)
 
 
 driver.get("https://email-fake.com/")
@@ -26,7 +26,7 @@ element = WebDriverWait(driver, 10).until(
 
 
 
-zoomdriver = webdriver.Chrome(PATH)
+zoomdriver = webdriver.Edge(PATH)
 zoomdriver.get("https://us04web.zoom.us/signup")
 
 
@@ -49,7 +49,7 @@ zoomelement = WebDriverWait(zoomdriver, 10).until(
     EC.presence_of_element_located((By.ID, "select-2"))
 )
 zoomelement.click()
-time.sleep(0.7)
+time.sleep(0.8)
 year = zoomdriver.find_element(By.ID,"select-item-select-2-99")
 year.click()
 
@@ -86,7 +86,7 @@ while flag<25:
             print("\n"+i.text)
             if "https:" in i.text:
                 print("There you go:" + i.text)
-                zoom = webdriver.Chrome(PATH)
+                zoom = webdriver.Edge(PATH)
                 zoom.get(i.text)
                 flag=25
                 break
