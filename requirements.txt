@@ -1,0 +1,4 @@
+pyautogui==0.9.53
+time==1.0.0
+selenium==4.0.0
+webdriver-manager
